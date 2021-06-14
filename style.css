@@ -1,0 +1,81 @@
+<style type="text/css">
+{
+	margin: 0;
+	padding: 0;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+body{
+	height: 100vh;
+	display : flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	font-family: ariel;
+	background: -webkit-linear-gradient(right,#00dbde,#fc00ff,#00dbde,#fc00ff);
+	background-position: center;
+}
+.container{
+	position: realtive;
+	width: 200px;
+	background: white;
+	padding: 30px 20px;
+}
+header{
+	font-size: 30px;
+	margin-bottom: 60px;
+}
+.input-field, form .button{
+	margin: 25px 0;
+	position: relative;
+	height: 50px;
+	width: 100%;
+}
+.input-field input{
+	height: 50%;
+	width: 80%;
+	border: 1px solid silver;
+	padding-left: 15px;
+	outline: none;
+	font-size: 19px;
+	transition: .4s;
+}
+input:focus{
+	border: 1px solid #CACACA;
+}
+.input-field label{
+	position: absolute;
+	top: 25%;
+	left: 20px;
+	transform: translateY(-50%);
+	pointer-events: none;
+	color: grey;
+ font-size: 12px;
+ transition: .4s;
+}
+input:focus ~ label,
+input:valid ~ label{
+	transform: translateY(-33px);
+	background: white;
+	font-size: 12px;
+	color: black;
+}
+form .button{
+	margin-top: 30px;
+	overflow: hidden;
+	z-index: 111;
+}
+
+.button .inner{
+	postion: absolute;
+	height: 50%;
+	width: 70%;
+	left: -40%;
+	z-index: -1;
+	background: -webkit-linear-gradient(right,#00dbde,#fc00ff,#00dbde,#fc00ff);
+}
+.button button{
+	width: 70%;
+	height: 50%;
+	border: none;
+}
